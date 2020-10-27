@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Pad</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="button-container">
+        <div class="track-button">
+          <button id="add-track-button" class="track-button">+</button>
+          <label class="button-label">Add Track</label>
+        </div>
+        <div class="track-button">
+          <button id="remove-track-button" class="track-button">-</button>
+          <label class="button-label">Stop Track</label>
+        </div>
+      </div>
+      <div class="instruments-container">
+        <div class="instruments-header">Instruments</div>
+        <div class="instruments">
+          <div id="hi-hat" class="instrument">
+            <div class="inst-color-bar"></div>
+            <div class="inst-title">Hi-hat</div>
+            <div class="inst-button-container">
+              <button class="remove inst-button">-</button>
+              <button class="add inst-button">+</button>
+            </div>
+          </div>
+          <div id="snare" class="instrument">
+            <div class="inst-color-bar"></div>
+            <div class="inst-title">Snare</div>
+            <div class="inst-button-container">
+              <button class="remove inst-button">-</button>
+              <button class="add inst-button">+</button>
+            </div>
+          </div>
+          <div id="kick" class="instrument">
+            <div class="inst-color-bar"></div>
+            <div class="inst-title">Kick</div>
+            <div class="inst-button-container">
+              <button class="remove inst-button">-</button>
+              <button class="add inst-button">+</button>
+            </div>
+          </div>
+          <div id="bell" class="instrument">
+            <div class="inst-color-bar"></div>
+            <div class="inst-title">Bell</div>
+            <div class="inst-button-container">
+              <button class="remove inst-button">-</button>
+              <button class="add inst-button">+</button>
+            </div>
+          </div>
+          <div id="ride" class="instrument">
+            <div class="inst-color-bar"></div>
+            <div class="inst-title">Ride</div>
+            <div class="inst-button-container">
+              <button class="remove inst-button">-</button>
+              <button class="add inst-button">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="header">
+        <h2>Drum Pad</h2>
+      </div>
+      <div id="drum-pad" class="tracks"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
