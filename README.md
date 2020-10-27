@@ -4,6 +4,14 @@
 
 https://djdrumpad.netlify.app/
 
+### Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+
+No libraries, no jQuery, just some good old-fashioned web development. 💁‍♀️
+
 ### The Scenario
 
 This project imitates the software UI of a DJ controller or MPC (MIDI Production Controller).
