@@ -52,7 +52,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.cta-btn {
+  margin-top: 40px;
+  background-color: #be2edd;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+.cta-btn:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
 }
 
 .track-button {
@@ -146,4 +165,87 @@ body {
 
 #ride {
   --primary-color: salmon;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+#close {
+  background-color: #fff;
+  border: 0;
+  font-size: 20px;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #be2edd;
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+
+.modal-header h3 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-content h4 {
+  text-align: center;
+  background-color: grey;
+  padding: 5px;
+  color: #fff;
+  border-bottom: 1px solid #333;
+}
+
+.modal-content {
+  font-size: 18px;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.modal {
+  color: black;
+  background-color: #dedede;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(214, 25, 25, 0.3);
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 600px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

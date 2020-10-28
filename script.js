@@ -4,6 +4,9 @@ const removeTrackBtn = document.getElementById('remove-track-button');
 const tracks = document.querySelectorAll('.track');
 const drumPadParent = document.getElementById('drum-pad');
 const addInstrumentBtns = document.querySelectorAll('.instrument');
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const modal = document.getElementById('modal');
 
 // Set empty tracks and render them to the drum pad
 sessionStorage.setItem('runningTracks', JSON.stringify([[], [], [], []]));
@@ -159,6 +162,21 @@ addInstrumentBtns.forEach(function (instrument) {
     removeInstrument(instName);
   });
 });
+
+// Open the modal with an overlay
+open.addEventListener('click', function () {
+  modal.classList.add('show-modal');
+});
+
+// Close the modal when clicking the "x"
+close.addEventListener('click', function () {
+  modal.classList.remove('show-modal');
+});
+
+// Hide modal when clicking outside of it
+window.addEventListener('click', (e) =>
+  e.target === modal ? modal.classList.remove('show-modal') : false
+);
 
 // Event listener for clicking a track and marking it as "selected" (Not yet implemented)
 tracks.forEach(function (track) {

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="sidebar">
+    <aside class="sidebar">
+      <button class="cta-btn" id="open">How It Works</button>
       <div class="button-container">
         <div class="track-button">
           <button id="add-track-button" class="track-button">+</button>
@@ -61,6 +62,62 @@
               <button class="add inst-button">+</button>
             </div>
           </div>
+        </div>
+      </div>
+    </aside>
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-header">
+          <div class="close-button">
+            <button id="close">X</button>
+          </div>
+          <h3>How It Works</h3>
+        </div>
+        <div class="modal-content">
+          <h4>The Project</h4>
+          <ul>
+            <li>
+              This app imitates the software UI of a DJ controller or MPC (MIDI
+              Production Controller).
+            </li>
+          </ul>
+
+          <h4>The Interface</h4>
+          <ul>
+            <li>Each track can play up to 2 instruments.</li>
+            <li>
+              A gray box represents an empty track, where 2 instruments can be
+              added.
+            </li>
+            <li>
+              An instrument can be added or removed from a track by clicking the
+              "+" or "-" button.
+            </li>
+            <li>A track can be added by clicking the "Add Track" button.</li>
+            <li>
+              The most recent track can be stopped with the "Stop Track" button.
+            </li>
+          </ul>
+          <h4>The Funk-tionality</h4>
+          <ul>
+            <li>
+              Each new instrument will be added to the first track playing no
+              instruments.
+            </li>
+            <li>
+              If each track is playing at least 1 instrument, the next
+              instrument will be added to the first track playing only 1
+              instrument.
+            </li>
+            <li>
+              When stopping a track, the instruments will be added to open
+              tracks, using the above logic.
+            </li>
+            <li>
+              If a track cannot be found for all of the stopped track's
+              instruments, they will be removed from the interface.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
