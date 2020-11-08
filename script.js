@@ -63,14 +63,15 @@ function updateDrumPad() {
       // If no instruments are found in a running track, create the track <div>
       // and add the `.empty` class
       let newTrack = document.createElement('div');
-      newTrack.setAttribute('class', 'track empty');
+      newTrack.classList.add('track');
+      newTrack.classList.add('empty');
       drumPadParent.appendChild(newTrack);
     } else {
       // If instruments are found, create the track <div> with the corresponding instrument info included
       track.forEach((instrument) => {
         // Create the new track element with a class of track and ID of the instrument name
         let newInstrument = document.createElement('div');
-        newInstrument.setAttribute('class', 'track');
+        newInstrument.classList.add('track');
         newInstrument.setAttribute('id', instrument);
 
         // Create <p> tags for the instrument name and track names and apply their respective classes

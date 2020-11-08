@@ -5,7 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   color: white;
-  font-family: 'Play', 'Helvetica', sans-serif;
+  font-family: 'IBM Plex Serif', 'Arial', serif;
 }
 
 .sidebar {
@@ -30,6 +30,7 @@ body {
 
 .track {
   background-color: var(--primary-color);
+  box-shadow: inset 0px 0px 2px 6px rgba(238, 191, 191, 0.221);
   height: 200px;
   width: 200px;
   margin: 20px;
@@ -133,12 +134,10 @@ button:focus {
 }
 
 .instrument-name {
-  font-family: 'IBM Plex Serif', 'Arial', serif;
   font-size: 30px;
 }
 
 .track-name {
-  font-family: 'IBM Plex Serif', 'Arial', serif;
   font-size: 15px;
 }
 
